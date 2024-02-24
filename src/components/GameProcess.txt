@@ -1,0 +1,1 @@
+1. creat window event listner, so it will wait for every things to load.

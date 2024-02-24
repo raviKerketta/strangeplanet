@@ -1,0 +1,173 @@
+.auth-background{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #03001C;
+    overflow: auto;
+}
+
+.top-margine{
+    width: 100%;
+    height: 70px;
+}
+
+.auth-form-container{
+    width: 500px;
+    height: fit-content;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #301E67;
+    border-radius: 10px;
+    
+}
+
+.auth-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+}
+
+.sign-in-up{
+    margin: 10px;
+    color: #5B8FB9;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: "Staatliches";
+}
+
+.sign-in-up:hover{
+    cursor: pointer;
+}
+
+.sign-in-form form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 10px;
+}
+
+.input-field{
+    margin: 10px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Poiret One";
+    font-weight: 900;
+}
+
+.error-handler{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poiret One';
+    color: red;
+    text-align: center;
+}
+
+input:focus{
+    outline: 3px solid #5B8FB9;
+}
+
+.button-submit{
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    background-color: #B6EADA;
+    color:#03001C;
+    font-family: "Staatliches";
+}
+
+.button-submit:hover{
+    cursor: pointer;
+    color: #B6EADA;
+    background-color: #03001C;
+}
+
+.forgot-password{
+    margin: 10px;
+    text-decoration: none;
+    align-self: center;
+    color: #B6EADA;
+    font-weight: 600;
+    font-family: "Poiret One";
+}
+
+.forgot-password:hover{
+    color: #B6EADA;
+}
+
+.desable{
+    display: none;
+}
+
+.hide-div{
+    background-color: #301E67;
+}
+
+.active-tab{
+    border-bottom: 4px solid #03001C;
+    color: #B6EADA;
+}
+
+.update-form-title{
+    font-size: 24px;
+    color: #B6EADA;
+    font-family: "Staatliches";
+    font-weight: 900;
+}
+
+.profilepic-container{
+    height: 30px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-pic-label{
+    width: 200px;
+    font-size: 15px;
+    font-family: "Staatliches";
+    color: #B6EADA;
+}
+
+.profilepic-container input{
+    width: 200px !important;
+    height: 20px !important;
+    border: none !important;
+    border-radius: 0% !important;
+    outline: none;
+    color: #B6EADA;
+}
+
+.profilepic-container input:hover{
+    cursor: pointer;
+}
+
+.profilepic-container input:focus{
+    outline: none;
+}
+
+@font-face {
+    font-family: 'Staatliches';
+    src: url("../../fonts/Staatliches-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Poiret One';
+    src: url("../../fonts/PoiretOne-Regular.ttf") format('truetype');
+}

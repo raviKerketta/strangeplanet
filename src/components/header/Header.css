@@ -1,0 +1,208 @@
+.nav-bar{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    background-color: #03001C;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.web-title{
+    text-decoration: none;
+    color: #B6EADA;
+}
+
+.web-title:hover{
+    color: #B6EADA;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 900;
+    font-family: "Handjet";
+    color: #B6EADA;
+    margin-left:  10px;
+}
+
+.right-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-profile-pic{
+    background-color: #5B8FB9;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.header-profile-pic img{
+    width: 30px;
+    height: 30px;
+}
+
+.ham-burger {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.ham-burger-active{
+    display: block;
+}
+
+.ham-burger-deactivate{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #B6EADA;
+    border-radius: 5px;
+}
+
+.close-button{
+    cursor: pointer;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.close-button-active{
+    display: flex;
+}
+
+.close-button-deactive{
+    display: none;
+}
+
+.menu{
+    position: absolute;
+    justify-content: center;
+    width: 500px;
+    top: 50px;
+    right: 50px;
+    z-index: 3;
+    background-color: #B6EADA;
+    opacity: 0.8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu ul{
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li{
+    width: 100%;
+}
+
+.menu ul li div{
+    display: flex;
+    width: 100%;
+    margin: 5px;
+    font-size: 25px;
+    justify-content: center;
+    color: #301E67;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: #301E67;
+}
+
+a:hover{
+    color: #03001C;
+}
+
+a:focus{
+    color: #5B8FB9;
+}
+
+.menu ul li div:hover{
+    cursor: pointer;
+    font-weight: 900;
+    color: #03001C;
+    border-bottom: none;
+    font-size: 30px;
+    animation: menu-text-animation;
+    animation-duration: 0.5s;
+}
+
+.menu-active{
+    display: flex;
+    animation: menu-active;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.menu-deactive{
+    display: none;
+    animation: menu-deactive;
+    animation-duration: 0.5s;
+}
+
+@font-face {
+    font-family: 'Handjet';
+    src: url("../../fonts/Handjet-Medium.ttf") format('truetype');
+}
+
+.color-list{
+    color: #0E21A0;
+    color: #4D2DB7;
+    color: #9D44C0;
+    color: #EC53B0;
+
+    color: #03001C;
+    color: #301E67;
+    color: #5B8FB9;
+    color: #B6EADA;
+}
+
+@keyframes menu-active{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 500px;
+    }
+}
+
+@keyframes menu-deactive{
+    from{
+        height: 500px;
+        display: flex;
+    }
+    to{
+        height: 0px;
+        display: none;
+    }
+}
+
+@keyframes menu-text-animation{
+    from{
+        font-size: 25px;
+    }
+    to{
+        font-size: 30px;
+    }
+}

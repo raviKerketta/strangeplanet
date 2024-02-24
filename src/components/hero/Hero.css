@@ -1,0 +1,86 @@
+.hero-section{
+    width: 100%;
+    height: 700px;
+    background-color: #03001C;
+    background-size: cover;
+    display: flex;
+}
+
+.hero-section-content{
+    width: 60%;
+    height: 100vh;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    align-self: flex-start;
+}
+
+.hero-title{
+    font-size: 60px;
+    margin-bottom: 0;
+    font-family: "Staatliches";
+    color: #5B8FB9;
+}
+
+.hero-context{
+    margin-top: 0;
+    font-size: 30px;
+    font-family: "Poiret One";
+    color: #B6EADA;
+}
+
+.play-now-button{
+    align-self: flex-start;
+    width: 150px;
+    height: 60px;
+    font-family: "Staatliches";
+    background-color: #B6EADA;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    color: #03001C;
+    font-weight: 900;
+}
+
+.play-now-button:hover{
+    cursor: pointer;
+    color: #B6EADA;
+    background-color: #5B8FB9;
+    font-weight: 100;
+}
+
+.play-now-link{
+    align-self: flex-start;
+}
+
+.hero-section-image{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 60px;
+    top: 10px;
+}
+
+.hero-image{
+    width: 400px;
+    height: 400px;
+}
+
+
+@font-face {
+    font-family: 'Staatliches';
+    src: url("../../fonts/Staatliches-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Poiret One';
+    src: url("../../fonts/PoiretOne-Regular.ttf") format('truetype');
+}
+
+

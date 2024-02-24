@@ -1,0 +1,130 @@
+
+label{
+    font-weight: 900;
+    color: #9D44C0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Staatliches";
+    color: #B6EADA;
+}
+
+.instruction-container-alignment{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.instruction-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.instruction-container div{
+    margin: 5px;
+}
+
+.card{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    border-radius: 5px;
+    background-color: #B6EADA;
+}
+.instruction-content-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    color: #03001C;
+    font-family: "Staatliches";
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-img{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-details{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img img{
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.8));
+}
+
+.back-button:hover{
+    filter: drop-shadow(5px 5px 10px rgba(169, 169, 169, 0.5));
+    width: 70px;
+    height: 70px;
+}
+
+@font-face {
+    font-family: 'Staatliches';
+    src: url("../../fonts/Staatliches-Regular.ttf") format('truetype');
+}
+
+@media only screen and (max-width: 1250px) {
+    .card-img img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .instruction-content-container{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .card-img img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .instruction-content-container{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card-img img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .instruction-content-container{
+        font-size: .8rem;
+    }
+}
+
